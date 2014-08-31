@@ -59,7 +59,7 @@ Starting point :
 	cat /etc/ssh/sshd_config |sed 's/#AddressFamily any/AddressFamily inet/g' |sed 's/#ListenAddress 0.0.0.0/ListenAddress 0.0.0.0/g' >/etc/ssh/sshd_config
 
 	# Disable some services
-	for SERVICE in auditd fcoe iptables ip6tables iptables iscsi iscsid lldpad lvm2-monitor netfs nfslock rpcbind rpcidmapd rpcgssd; do
+	for SERVICE in auditd fcoe iptables ip6tables iscsi iscsid lldpad lvm2-monitor netfs nfslock rpcbind rpcidmapd rpcgssd; do
 	    chkconfig ${SERVICE} off
 	done
 
